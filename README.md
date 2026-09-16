@@ -1,4 +1,4 @@
-# Atlas / Clima
+# EXPLORER
 
 Aplicación web para consultar el clima actual de una ciudad o país usando la API pública de [OpenWeather](https://openweathermap.org/current).
 
