@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Consulta el clima actual de cualquier ciudad del mundo.">
+	<title>Atlas del clima | Consulta en tiempo real</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main class="app-shell">
+		<header class="topbar">
+			<a class="brand" href="Index.html" aria-label="Atlas del clima, inicio"><span class="brand-mark" aria-hidden="true">◒</span><span>atlas<span class="brand-accent">/</span>clima</span></a>
+			<p class="live-label"><span class="live-dot"></span>Datos en tiempo real</p>
+		</header>
+		<section class="intro" aria-labelledby="page-title">
+			<p class="eyebrow">Explora el planeta</p>
+			<h1 id="page-title">El clima de cualquier lugar,<br><em>al instante.</em></h1>
+			<p class="intro-copy">Busca una ciudad y descubre sus condiciones actuales.</p>
+		</section>
+		<section class="search-panel" aria-label="Buscar una ciudad">
+			<form id="search-form" class="search-form">
+				<label for="city-input">Ciudad o país</label>
+				<div class="search-row"><div class="input-wrap"><span class="input-icon" aria-hidden="true">⌖</span><input id="city-input" name="city" type="search" placeholder="Ej. Madrid, Tokio, Bogotá..." autocomplete="off" maxlength="80"></div><button class="search-button" type="submit"><span>Buscar</span><span aria-hidden="true">↗</span></button></div>
+				<p id="validation-message" class="validation-message" role="alert" hidden></p>
+			</form>
+			<div class="history-area" aria-labelledby="history-title"><div class="history-heading"><h2 id="history-title">Búsquedas recientes</h2><button id="clear-history" class="clear-button" type="button" hidden>Limpiar</button></div><div id="history-list" class="history-list"></div></div>
+		</section>
+		<section id="results" class="results" aria-live="polite" aria-busy="false">
+			<div id="empty-state" class="empty-state"><span class="empty-icon" aria-hidden="true">☼</span><h2>Tu próxima coordenada empieza aquí</h2><p>Introduce una ciudad para ver temperatura, viento y condiciones actuales.</p></div>
+			<div id="loading-state" class="loading-state" hidden><span class="loader" aria-hidden="true"></span><p>Consultando el cielo de <strong id="loading-city"></strong>...</p></div>
+			<div id="error-state" class="error-state" role="alert" hidden><span class="error-icon" aria-hidden="true">!</span><div><h2 id="error-title">No pudimos encontrar ese lugar</h2><p id="error-message">Comprueba el nombre e inténtalo de nuevo.</p></div><button id="retry-button" class="retry-button" type="button">Reintentar <span aria-hidden="true">↗</span></button></div>
+			<article id="weather-card" class="weather-card" hidden></article>
+		</section>
+	</main>
+	<footer><span>ATLAS / CLIMA</span><span>OpenWeather · Consulta meteorológica</span></footer>
+	<script src="aplicacion.js"></script>
+</body>
+</html>
