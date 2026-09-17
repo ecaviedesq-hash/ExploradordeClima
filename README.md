@@ -4,7 +4,7 @@ Aplicación web para consultar el clima actual de una ciudad o país usando la A
 
 ## Uso
 
-Abre `Index.html` desde un servidor local. Es recomendable usar Live Server en VS Code o ejecutar cualquier servidor estático en esta carpeta para evitar restricciones del navegador. Escribe una ciudad, pulsa **Buscar** y la aplicación mostrará la temperatura, sensación térmica, humedad y viento.
+Abre `index.html` desde un servidor local o visita la versión publicada en GitHub Pages. Es recomendable usar Live Server en VS Code o ejecutar cualquier servidor estático en esta carpeta para evitar restricciones del navegador. Escribe una ciudad, pulsa **Buscar** y la aplicación mostrará la temperatura, sensación térmica, humedad y viento.
 
 La interfaz contempla validación de búsquedas vacías, carga, resultado exitoso, errores con reintento e historial de las últimas cinco búsquedas exitosas mediante `localStorage`.
 
