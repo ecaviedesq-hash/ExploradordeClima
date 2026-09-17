@@ -6,6 +6,10 @@ Aplicación web para consultar el clima actual de una ciudad o país usando la A
 
 Abre `index.html` desde un servidor local o visita la versión publicada en GitHub Pages. Es recomendable usar Live Server en VS Code o ejecutar cualquier servidor estático en esta carpeta para evitar restricciones del navegador. Escribe una ciudad, pulsa **Buscar** y la aplicación mostrará la temperatura, sensación térmica, humedad y viento.
 
+Versión publicada: <https://ecaviedesq-hash.github.io/ExploradordeClima/>
+
+Para activar GitHub Pages, entra en `Settings > Pages` del repositorio, selecciona `Deploy from a branch`, elige la rama `main` y la carpeta `/ (root)`, y pulsa `Save`. El archivo de entrada debe conservar el nombre `index.html` en minúsculas.
+
 La interfaz contempla validación de búsquedas vacías, carga, resultado exitoso, errores con reintento e historial de las últimas cinco búsquedas exitosas mediante `localStorage`.
 
 ## API y respuesta
