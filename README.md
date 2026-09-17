@@ -22,8 +22,19 @@ La clave se encuentra en el JavaScript del navegador porque este proyecto es una
 
 ## Entrega Git
 
-El trabajo se organiza en commits significativos:
+El historial del proyecto conserva un flujo de trabajo con ramas y merges descriptivos:
+
+- `main`: rama estable de entrega.
+- `feature/consulta-clima`: desarrollo inicial de la aplicación.
+- `docs/historial-git`: documentación del proceso de versionado.
+- `chore/calidad-proyecto`: configuración de archivos auxiliares del proyecto.
+
+Las ramas de trabajo se integran en `main` mediante merges explícitos (`--no-ff`), conservando el contexto de cada tarea.
+
+Commits principales:
 
 1. `feat: crea interfaz base para consulta meteorologica`
 2. `feat: conecta OpenWeather y renderiza resultados`
 3. `feat: gestiona estados, validacion e historial`
+4. `style: actualiza identidad visual a Explorer`
+5. `docs: documenta ramas y merges de la entrega`
